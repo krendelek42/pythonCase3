@@ -18,6 +18,7 @@ for year in range (1, years + 1):
     for month in range (1, 13):
         amount_per_month = base * percent * 0.01
         capital = amount_per_month + base
-        print('| ', month, '\t | ', "{0:.2f}".format(base), '\t | ', "{0:.2f}".format(amount_per_month), '\t|', "{0:.2f}".format(capital), '\t |', sep='')
+        print('| ', month, '\t | ', "{0:.2f}".format(base), '\t | ', "{0:.2f}".format(amount_per_month), '\t|',
+              "{0:.2f}".format(capital), '\t |', sep='')
         base = capital + investment_infusion
     print('-----------------------------------------------------------')
